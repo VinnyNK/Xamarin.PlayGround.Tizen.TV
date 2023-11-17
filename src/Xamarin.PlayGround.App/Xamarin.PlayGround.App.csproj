@@ -1,0 +1,38 @@
+<Project Sdk="Tizen.NET.Sdk/1.0.9">
+
+  <PropertyGroup>
+    <TargetFramework>tizen60</TargetFramework>
+    <RootNamespace>Xamarin.PlayGround.App</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Include Nuget Package for Xamarin building -->
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Pages\MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <None Remove="Assets\Images\SeatedMonkey.jpg" />
+    <EmbeddedResource Include="Assets\Images\SeatedMonkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Grid\Grid1Page.xaml.cs">
+      <DependentUpon>Grid1Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Grid\Grid2Page.xaml.cs">
+      <DependentUpon>Grid2Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Grid\Grid3Page.xaml.cs">
+      <DependentUpon>Grid3Page.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Grid\GridPage.xaml.cs">
+      <DependentUpon>GridPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

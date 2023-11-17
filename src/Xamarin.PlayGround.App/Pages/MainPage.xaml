@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.MainPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Welcome to Xamarin.Forms! 123321"
+                   Margin="50"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button
+                    Text="Layout Systems"
+                    Clicked="OnButtonLayoutClicked"
+                    />
+                
+                <Button
+                    Text="Navigation Test"
+                    Clicked="OnButtonNavigationClicked"
+                    />
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

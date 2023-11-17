@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.Relative.RelativePage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Relative Layout Playground"
+                   Margin="50"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button 
+                    Text="Relative 1"
+                    Clicked="OnRelative1Clicked"
+                />
+                
+                <Button 
+                    Text="Relative 2"
+                    Clicked="OnRelative2Clicked"
+                />
+                
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

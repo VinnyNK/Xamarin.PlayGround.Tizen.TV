@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.LayoutSystemPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Layout Systems"
+                   Margin="50"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button 
+                    IsEnabled="True"
+                    Text="Stack Layout"
+                    Clicked="OnStackClicked"
+                />
+                <Button
+                    Text="Absolute Layout"
+                    Clicked="OnAbsoluteClicked"
+                />
+                <Button
+                    Text="Relative Layout"
+                    Clicked="OnRelativeClicked"
+                />
+                <Button
+                    Text="Grid Layout"
+                    Clicked="OnGridClicked"
+                />
+                <Button
+                    Text="Flex Layout"
+                    Clicked="OnFlexClicked"
+                />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

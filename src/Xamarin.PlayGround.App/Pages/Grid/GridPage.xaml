@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.Grid.GridPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Grid Layout Playground"
+                   Margin="50"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button 
+                    Text="Grid 1"
+                    Clicked="OnGrid1Clicked"
+                />
+                
+                <Button 
+                    Text="Grid 2"
+                    Clicked="OnGrid2Clicked"
+                />
+                
+                <Button 
+                    Text="Grid 3"
+                    Clicked="OnGrid3Clicked"
+                />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

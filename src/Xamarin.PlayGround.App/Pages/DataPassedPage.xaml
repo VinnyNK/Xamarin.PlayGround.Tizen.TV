@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.DataPassedPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Data:" HorizontalOptions="FillAndExpand" />
+                <Label Text="{Binding Data}" FontSize="Medium" FontAttributes="Bold" />
+            </StackLayout>
+            <Button Text="Previous Page" Clicked="OnPreviousPageButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

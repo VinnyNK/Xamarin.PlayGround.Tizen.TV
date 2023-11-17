@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.Absolute.AbsolutePage"
+             Title="Absolute Layout">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Absolute Layout Playground"
+                   Margin="50"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button 
+                    Text="Absolute 1"
+                    Clicked="OnAbsolute1Clicked"
+                />
+                
+                <Button 
+                    Text="Absolute 2"
+                    Clicked="OnAbsolute2Clicked"
+                />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

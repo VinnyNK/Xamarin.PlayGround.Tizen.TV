@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.PlayGround.App.Pages.Stack.StackPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Stack Layout Playground"
+                   Margin="50"
+                   HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Button 
+                    Text="Stack 1"
+                    Clicked="OnStack1Clicked"
+                />
+                
+                <Button 
+                    Text="Stack 2"
+                    Clicked="OnStack2Clicked"
+                />
+                
+                <Button 
+                    Text="Stack 3"
+                    Clicked="OnStack3Clicked"
+                />
+                
+                <Button 
+                    Text="Stack 4"
+                    Clicked="OnStack4Clicked"
+                />
+                
+                <Button 
+                    Text="Stack 5"
+                    Clicked="OnStack5Clicked"
+                />
+                
+                <Button 
+                    Text="Stack 6"
+                    Clicked="OnStack6Clicked"
+                />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
